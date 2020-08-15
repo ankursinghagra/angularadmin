@@ -1,0 +1,8 @@
+<app-header></app-header>
+
+<app-sidebar></app-sidebar>
+
+<main class="page-content" [ngClass]="{'overlay': SidebarService.sidebar_open }">
+	<div class="overlay"></div>
+	<router-outlet></router-outlet>
+</main>
